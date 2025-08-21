@@ -9,11 +9,11 @@ void main(List<String> args) async {
 
   Platform.isAndroid
   ?await Firebase.initializeApp(
-    options: FirebaseOptions(
-      apiKey: "AIzaSyAnvs1Ohez9-xRyBglBHB8KG4lzE_lQncw", 
-      appId: "1:484482921697:android:3af2a8b8c526e7692b33a0", 
-      messagingSenderId: "484482921697", 
-      projectId: "gadoostore-608c3",
+    options: const FirebaseOptions(
+      apiKey: 'AIzaSyAnvs1Ohez9-xRyBglBHB8KG4lzE_lQncw', 
+      appId: '1:484482921697:android:3af2a8b8c526e7692b33a0', 
+      messagingSenderId: '484482921697', 
+      projectId: 'gadoostore-608c3',
       ),
   )
 

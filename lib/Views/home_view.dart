@@ -7,9 +7,9 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: const Text("Gadoo Store"),
+        title: const Text('Gadoo Store'),
       ),
-      body:Column() ,
+      body:const Column() ,
     );
   }
 }

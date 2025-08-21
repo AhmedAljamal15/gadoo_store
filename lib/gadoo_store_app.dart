@@ -6,9 +6,9 @@ class GadooStore extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Gadoo Store",
+      title: 'Gadoo Store',
       home: HomeView(),
     );
   }
