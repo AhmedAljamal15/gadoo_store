@@ -2,10 +2,13 @@ import 'dart:io';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:gadoo_store/Core/App/env.variable.dart';
 import 'package:gadoo_store/gadoo_store_app.dart';
 
 void main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  await EnvVariable.instance.init(envType: EnvTypeEnum.prod);
 
   Platform.isAndroid
   ?await Firebase.initializeApp(
@@ -24,5 +27,3 @@ void main(List<String> args) async {
   :await Firebase.initializeApp();
   runApp( const GadooStore());
 }
-
-
