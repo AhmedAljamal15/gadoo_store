@@ -9,7 +9,12 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Gadoo Store'),
       ),
-      body:const Column() ,
+      body:  Column(
+        children:  [
+
+        ],
+
+      ) ,
     );
   }
 }
